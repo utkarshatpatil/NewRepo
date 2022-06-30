@@ -1,0 +1,36 @@
+package test;
+
+public class Student {
+
+	private int rollno;
+	private String name;
+	private double marks;
+	
+	Student()
+	{
+		rollno = 101;
+		name = "Tara";
+		marks = 90.50;
+	}
+	
+	Student(int no,String nm,double mk)
+	{
+		rollno = no;
+		name = nm;
+		marks = mk;
+	}
+	
+	public void printdetails()
+	{
+		System.out.println("Roll no:"+rollno);
+		System.out.println("Name:"+name);
+		System.out.println("Marks:"+marks);
+	}
+	public static void main(String[] args) {
+		Student s1 = new Student();
+		Student s2 = new Student(102, "Shiv", 84.50);
+		s1.printdetails();
+		s2.printdetails();
+	}
+
+}
